@@ -27,4 +27,16 @@ class DemoController extends Controller
        return $request->all();
 
     }
+
+    function Header_request(Request $request){
+    //specific data  pass/pathanor jonno
+    /*     $name=$request->header('name');
+        $age=$request->header('age');
+        return "Your name is $name and your age is $age"; */
+
+        // icha moto data pass/pathanor jonno
+
+        return $request->header();
+
+    }
 }

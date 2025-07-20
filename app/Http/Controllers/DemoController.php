@@ -52,4 +52,32 @@ class DemoController extends Controller
            'age'=>$age
        );
     }
+
+
+function Multiple_fromData(Request $request){ 
+
+   //  return $request->input();
+
+   $photoFile=$request->file('photo');
+   $fileSize=filesize($photoFile);
+   $fileType=filetype($photoFile);
+   $fileName=$photoFile->getClientOriginalName();
+   $fileExtention=$photoFile->extension();
+    
+   return array(
+       "fileSize"=>$fileSize,
+       "fileType"=>$fileType,
+       "fileName"=>$fileName,
+       "fileExtention"=>$fileExtention,
+       
+   );
+    
+   
+  
+}
+
+
+
+
+
 }

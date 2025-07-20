@@ -10,5 +10,11 @@ class DemoController extends Controller
          return "This is a simple request";
      }
 
+    function Url_prameters(Request $request){
+        
+        $name=$request->name;
+        $age=$request->age;
+        return "Your name is $name and your age is $age";
+    }
     
 }

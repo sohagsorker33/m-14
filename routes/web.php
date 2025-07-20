@@ -5,3 +5,5 @@ use App\Http\Controllers\DemoController;
 
  Route::get('/demo1', [DemoController::class, 'Simple_request']);
  Route::get('/demo2/{name}/{age}', [DemoController::class, 'Url_prameters']);
+ Route::get('/demo3', [DemoController::class, 'Json_body_request']);
+ Route::get('/demo4', [DemoController::class, 'Json_body_request']);

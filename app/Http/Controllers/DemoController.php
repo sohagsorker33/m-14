@@ -16,5 +16,15 @@ class DemoController extends Controller
         $age=$request->age;
         return "Your name is $name and your age is $age";
     }
-    
+    function Json_body_request(Request $request){
+       //specific data  pass/pathanor jonno
+     /*   $name=$request->name;
+       $age=$request->age;
+       return "Your name is $name and your age is $age"; */
+
+       // icha moto data pass/pathanor jonno
+ 
+       return $request->all();
+
+    }
 }

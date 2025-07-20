@@ -9,3 +9,4 @@ use App\Http\Controllers\DemoController;
  Route::get('/demo4', [DemoController::class, 'Json_body_request']);
  Route::get('/demo5', [DemoController::class, 'Header_request']);
  Route::get('/demo6', [DemoController::class, 'Header_request']);
+ Route::get('/demo7/{name}/{age}', [DemoController::class, 'Multiple_request']);

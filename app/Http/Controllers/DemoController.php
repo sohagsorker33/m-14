@@ -37,6 +37,19 @@ class DemoController extends Controller
         // icha moto data pass/pathanor jonno
 
         return $request->header();
+    
+    }
 
+    function Multiple_request(){
+       $header=request()->header();
+       $body=request()->all();
+       $name=request()->name;
+       $age=request()->age;
+       return array(
+           'header'=>$header,
+           'body'=>$body,
+           'name'=>$name,   
+           'age'=>$age
+       );
     }
 }

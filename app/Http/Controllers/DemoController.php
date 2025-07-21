@@ -89,5 +89,31 @@ function File_upload(Request $request){
     return  $request->cookie();
  }
 
+ function Array(){
+    return array(
+        array(
+            "name"=>"Rakib",
+            "age"=>20,
+            "city"=>"Dhaka"
+        ),
+        array(
+            "name"=>"Rakib",
+            "age"=>20,
+            "city"=>"Dhaka"
+        ),
+        array(
+            "name"=>"Rakib",
+            "age"=>20,
+            "city"=>"Dhaka"
+        ),
+        array(
+            "name"=>"Rakib",
+            "age"=>20,
+            "city"=>"Dhaka"
+        ),
+    );
+ }
+
+
 
 }

@@ -13,3 +13,4 @@ use App\Http\Controllers\DemoController;
  Route::post('/demo8', [DemoController::class, 'Multiple_fromData']);
  Route::post('/demo9', [DemoController::class, 'File_upload']);
  Route::post('/demo10', [DemoController::class, 'Cookie']);
+ Route::post('/demo11', [DemoController::class, 'Array']);

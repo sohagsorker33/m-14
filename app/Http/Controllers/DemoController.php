@@ -144,7 +144,13 @@ function CreateCookie(Request $request){
     return response("success")->cookie($name,$value,$minutes,$path,$domain,$secure,$httpOnly);
 }
 
+function ResponseHeader(Request $request){
+     
+    return response("success")->header("Token","This is a data")->header("name","Rakib");
 
+
+
+}
 
 
 }

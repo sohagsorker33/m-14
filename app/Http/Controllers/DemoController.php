@@ -133,4 +133,18 @@ function Redirect(Request $request){
 }
 
 
+function CreateCookie(Request $request){
+    $name="Token";
+    $value="This is a data";
+    $minutes=60;
+    $path='/';
+    $domain=$_SERVER['SERVER_NAME'];
+    $secure=false;
+    $httpOnly=true;
+    return response("success")->cookie($name,$value,$minutes,$path,$domain,$secure,$httpOnly);
+}
+
+
+
+
 }

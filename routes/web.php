@@ -11,3 +11,5 @@ use App\Http\Controllers\DemoController;
  Route::get('/demo6', [DemoController::class, 'Header_request']);
  Route::get('/demo7/{name}/{age}', [DemoController::class, 'Multiple_request']);
  Route::post('/demo8', [DemoController::class, 'Multiple_fromData']);
+ Route::post('/demo9', [DemoController::class, 'File_upload']);
+ Route::post('/demo10', [DemoController::class, 'Cookie']);

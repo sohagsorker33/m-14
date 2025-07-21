@@ -72,12 +72,22 @@ function Multiple_fromData(Request $request){
        
    );
     
-   
-  
+}
+
+function File_upload(Request $request){
+     if ($request->hasFile('photo')) {
+        $file = $request->file('photo');
+        $file->move(public_path('uploads'), $file->getClientOriginalName());
+        return response()->json(['message' => 'Uploaded successfully']);
+    } else {
+        return response()->json(['error' => 'No file uploaded'], 400);
+    }
 }
 
 
-
+ function Cookie(Request $request){
+    return  $request->cookie();
+ }
 
 
 }

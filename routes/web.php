@@ -15,4 +15,4 @@ use App\Http\Controllers\DemoController;
  Route::post('/demo10', [DemoController::class, 'Cookie']);
  Route::post('/demo11', [DemoController::class, 'Array']);
  Route::post('/demo12', [DemoController::class, 'JsonResponse']);
-     
+ Route::get('/demo13', [DemoController::class, 'Redirect']);

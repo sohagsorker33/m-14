@@ -128,7 +128,9 @@ function JsonResponse(Request $request){
  
 }
 
-
+function Redirect(Request $request){
+    return redirect('demo');
+}
 
 
 }

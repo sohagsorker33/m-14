@@ -114,6 +114,21 @@ function File_upload(Request $request){
     );
  }
 
+function JsonResponse(Request $request){
+    $message="success";
+    $data=array(
+        "name"=>"Rakib",
+        "age"=>20,
+        "city"=>"Dhaka"
+    );
+     return response()->json([
+        "message"=>$message,
+        "data"=>$data
+    ],status:201);
+ 
+}
+
+
 
 
 }
